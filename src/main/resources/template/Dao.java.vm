@@ -1,0 +1,20 @@
+package ${package}.${moduleName}.dao;
+
+import com.demo.entity.${pathName}.${className};
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.apache.ibatis.annotations.Param;
+
+/**
+ * @author LC
+ * @email dcam00r0@qq.com
+ * @date ${datetime}
+ */
+@Mapper
+@Repository
+public interface ${className}Dao extends BaseMapper<${className}> {
+    IPage<${className}> getAll(Page page, @Param("param") ${className} ${classname});
+}

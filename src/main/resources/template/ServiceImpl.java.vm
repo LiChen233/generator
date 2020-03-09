@@ -1,0 +1,26 @@
+package ${package}.${moduleName}.service.impl;
+
+import com.demo.entity.${pathName}.${className};
+import com.demo.dao.${pathName}.${className}Dao;
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+
+/**
+ * @author LC
+ * @email dcam00r0@qq.com
+ * @date ${datetime}
+ */
+@Service("${classname}Service")
+@Transactional
+public class ${className}ServiceImpl extends ServiceImpl<${className}Dao, ${className}> implements ${className}Service {
+    @Autowired
+    private ${className}Dao ${classname}Dao;
+
+    @Override
+    public IPage<${className}> getAll(Integer page, Integer limit, ${className} ${classname}) {
+        return ${classname}Dao.getAll(new Page(page,limit),${classname});
+    }
+}

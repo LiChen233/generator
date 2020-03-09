@@ -1,0 +1,70 @@
+package ${package}.${moduleName}.controller;
+
+import com.demo.entity.Result;
+import com.demo.entity.${pathName}.${className};
+import com.demo.service.${pathName}.${className}Service;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+/**
+ * @author LC
+ * @email dcam00r0@qq.com
+ * @date ${datetime}
+ */
+@CrossOrigin
+@RestController
+@RequestMapping("/${pathName}")
+public class ${className}Controller {
+    @Autowired
+    private ${className}Service ${classname}Service;
+
+    /**
+     * 查询
+     */
+    @GetMapping("/")
+    public Result find(${className} o){
+        o = ${classname}Service.getById(o);
+        return Result.success(o);
+    }
+
+    /**
+     * 分页查询
+     */
+    @GetMapping("/getAll")
+    public Result getAll(Integer page, Integer limit, ${className} o){
+        IPage<${className}> iPage = ${classname}Service.getAll(page, limit, o);
+
+        return Result.success(iPage.getRecords())
+                .setCount((int) iPage.getTotal());
+    }
+
+
+    /**
+     * 插入
+     */
+    @PostMapping("/")
+    public Result insert(${className} o){
+        ${classname}Service.save(o);
+        return Result.success(o.getId());
+    }
+
+    /**
+     * 修改
+     */
+    @PutMapping("/")
+    public Result update(${className} o){
+        ${classname}Service.updateById(o);
+        return Result.success(null);
+    }
+
+    /**
+     * 删除
+     */
+    @DeleteMapping("/")
+    public Result delete(${className} o){
+        ${classname}Service.removeById(o);
+        return Result.success(null);
+    }
+
+}
