@@ -16,5 +16,6 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 @Repository
 public interface ${className}Dao extends BaseMapper<${className}> {
-    IPage<${className}> getAll(Page page, @Param("param") ${className} ${classname});
+
+    IPage<${className}> queryPage(Page page, @Param("param") Map<String, Object> param);
 }

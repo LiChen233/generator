@@ -19,8 +19,12 @@ public class ${className}ServiceImpl extends ServiceImpl<${className}Dao, ${clas
     @Autowired
     private ${className}Dao ${classname}Dao;
 
+
     @Override
-    public IPage<${className}> getAll(Integer page, Integer limit, ${className} ${classname}) {
-        return ${classname}Dao.getAll(new Page(page,limit),${classname});
+    public Result queryPage(Map<String, Object> param) {
+        Page page = PageUtils.getPage(param);
+        IPage<${className}> iPage = ${classname}Dao.queryPage(page, param);
+        return PageUtils.getPageResult(iPage);
     }
+
 }

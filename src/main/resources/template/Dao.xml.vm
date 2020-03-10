@@ -3,9 +3,9 @@
 
 <mapper namespace="com.demo.dao.${pathName}.${className}Dao">
     <resultMap id="res" type="com.demo.entity.${pathName}.${className}" />
-    <parameterMap id="par" type="com.demo.entity.${pathName}.${className}" />
 
-    <select id="getAll" resultMap="res" parameterMap="par">
-
+    <select id="queryPage" resultMap="res" >
+        select * from ${tableName}
     </select>
+
 </mapper>

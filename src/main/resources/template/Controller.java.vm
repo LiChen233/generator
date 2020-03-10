@@ -23,20 +23,17 @@ public class ${className}Controller {
      * 查询
      */
     @GetMapping("/")
-    public Result find(${className} o){
-        o = ${classname}Service.getById(o);
-        return Result.success(o);
+    public Result find(@RequestParam("id") String id){
+        ${classname} = ${classname}Service.getById(id);
+        return Result.success(${classname});
     }
 
     /**
      * 分页查询
      */
-    @GetMapping("/getAll")
-    public Result getAll(Integer page, Integer limit, ${className} o){
-        IPage<${className}> iPage = ${classname}Service.getAll(page, limit, o);
-
-        return Result.success(iPage.getRecords())
-                .setCount((int) iPage.getTotal());
+    @GetMapping("/queryPage")
+    public Result queryPage(@RequestParam Map<String, Object> param){
+        return IPage<${className}> iPage = ${classname}Service.queryPage(param);
     }
 
 
@@ -44,17 +41,17 @@ public class ${className}Controller {
      * 插入
      */
     @PostMapping("/")
-    public Result insert(${className} o){
-        ${classname}Service.save(o);
-        return Result.success(o.getId());
+    public Result insert(${className} ${classname}){
+        ${classname}Service.save(${classname});
+        return Result.success(${classname}.getId());
     }
 
     /**
      * 修改
      */
     @PutMapping("/")
-    public Result update(${className} o){
-        ${classname}Service.updateById(o);
+    public Result update(${className} ${classname}){
+        ${classname}Service.updateById(${classname});
         return Result.success(null);
     }
 
@@ -62,8 +59,8 @@ public class ${className}Controller {
      * 删除
      */
     @DeleteMapping("/")
-    public Result delete(${className} o){
-        ${classname}Service.removeById(o);
+    public Result delete(@RequestParam("id") String id){
+        ${classname}Service.removeById(id);
         return Result.success(null);
     }
 

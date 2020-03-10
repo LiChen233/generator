@@ -11,6 +11,8 @@ import org.apache.ibatis.annotations.Param;
  * @date ${datetime}
  */
 public interface ${className}Service extends IService<${className}> {
-    IPage<${className}> getAll(Integer page, Integer limit, @Param("param") ${className} ${classname});
+
+    Result queryPage(@RequestParam Map<String, Object> param);
+
 }
 
