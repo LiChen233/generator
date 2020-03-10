@@ -1,10 +1,11 @@
 package ${package}.${moduleName}.service;
 
+import com.demo.entity.Result;
 import com.demo.entity.${pathName}.${className};
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import org.apache.ibatis.annotations.Param;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Map;
 /**
  * @author LC
  * @email dcam00r0@qq.com

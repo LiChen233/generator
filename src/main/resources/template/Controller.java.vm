@@ -3,9 +3,10 @@ package ${package}.${moduleName}.controller;
 import com.demo.entity.Result;
 import com.demo.entity.${pathName}.${className};
 import com.demo.service.${pathName}.${className}Service;
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * @author LC
@@ -24,7 +25,7 @@ public class ${className}Controller {
      */
     @GetMapping("/")
     public Result find(@RequestParam("id") String id){
-        ${classname} = ${classname}Service.getById(id);
+        ${className} ${classname} = ${classname}Service.getById(id);
         return Result.success(${classname});
     }
 
@@ -33,7 +34,7 @@ public class ${className}Controller {
      */
     @GetMapping("/queryPage")
     public Result queryPage(@RequestParam Map<String, Object> param){
-        return IPage<${className}> iPage = ${classname}Service.queryPage(param);
+        return ${classname}Service.queryPage(param);
     }
 
 
