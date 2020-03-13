@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public interface ${className}Service extends IService<${className}> {
 
-    Result queryPage(@RequestParam Map<String, Object> param);
+    Result queryPage(Map<String, Object> param);
 
 }
 
