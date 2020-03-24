@@ -18,8 +18,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author LC
- * @email dcam00r0@qq.com
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
  * @date ${datetime}
  */
 @Data

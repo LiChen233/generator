@@ -6,9 +6,12 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
+
 /**
- * @author LC
- * @email dcam00r0@qq.com
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
  * @date ${datetime}
  */
 public interface ${className}Service extends IService<${className}> {

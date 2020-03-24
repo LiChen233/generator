@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 /**
- * @author LC
- * @email dcam00r0@qq.com
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
  * @date ${datetime}
  */
 @CrossOrigin
