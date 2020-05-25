@@ -3,6 +3,8 @@ package ${package}.${moduleName}.controller;
 import com.demo.entity.Result;
 import com.demo.entity.${pathName}.${className};
 import com.demo.service.${pathName}.${className}Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +21,9 @@ import java.util.Map;
 @RestController
 @RequestMapping("/${pathName}")
 public class ${className}Controller {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
+
     @Autowired
     private ${className}Service ${classname}Service;
 
