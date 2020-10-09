@@ -20,6 +20,9 @@ import java.util.Map;
  */
 @Service("${classname}Service")
 public class ${className}ServiceImpl extends ServiceImpl<${className}Dao, ${className}> implements ${className}Service {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
+
     @Autowired
     private ${className}Dao ${classname}Dao;
 
