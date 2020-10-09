@@ -1,6 +1,6 @@
 package ${package}.${moduleName}.service.impl;
 
-import com.beneway.entity.system.Result;
+import com.beneway.entity.Result;
 import com.beneway.common.utils.PageUtils;
 import com.beneway.entity.${pathName}.${className};
 import com.beneway.dao.${pathName}.${className}Dao;

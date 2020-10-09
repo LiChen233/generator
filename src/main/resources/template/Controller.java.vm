@@ -1,6 +1,6 @@
 package ${package}.${moduleName}.controller;
 
-import com.beneway.entity.system.Result;
+import com.beneway.entity.Result;
 import com.beneway.entity.${pathName}.${className};
 import com.beneway.service.${pathName}.${className}Service;
 import org.springframework.beans.factory.annotation.Autowired;
