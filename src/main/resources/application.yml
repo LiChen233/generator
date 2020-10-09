@@ -10,9 +10,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     #MySQL配置
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.96.77.12/emergency?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://47.96.77.12:3307/knowedge?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     username: root
-    password:
+    password: 1
     #oracle配置
 #    driverClassName: oracle.jdbc.OracleDriver
 #    url: jdbc:oracle:thin:@192.168.10.10:1521:helowin

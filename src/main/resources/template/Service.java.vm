@@ -1,7 +1,7 @@
 package ${package}.${moduleName}.service;
 
-import com.demo.entity.Result;
-import com.demo.entity.${pathName}.${className};
+import com.beneway.entity.system.Result;
+import com.beneway.entity.${pathName}.${className};
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.web.bind.annotation.RequestParam;
 

@@ -1,9 +1,9 @@
 package ${package}.${moduleName}.service.impl;
 
-import com.demo.entity.Result;
-import com.demo.common.utils.PageUtils;
-import com.demo.entity.${pathName}.${className};
-import com.demo.dao.${pathName}.${className}Dao;
+import com.beneway.entity.system.Result;
+import com.beneway.common.utils.PageUtils;
+import com.beneway.entity.${pathName}.${className};
+import com.beneway.dao.${pathName}.${className}Dao;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.core.metadata.IPage;

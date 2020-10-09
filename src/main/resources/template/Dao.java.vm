@@ -1,6 +1,6 @@
 package ${package}.${moduleName}.dao;
 
-import com.demo.entity.${pathName}.${className};
+import com.beneway.entity.${pathName}.${className};
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;

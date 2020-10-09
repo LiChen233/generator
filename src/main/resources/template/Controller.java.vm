@@ -1,8 +1,8 @@
 package ${package}.${moduleName}.controller;
 
-import com.demo.entity.Result;
-import com.demo.entity.${pathName}.${className};
-import com.demo.service.${pathName}.${className}Service;
+import com.beneway.entity.system.Result;
+import com.beneway.entity.${pathName}.${className};
+import com.beneway.service.${pathName}.${className}Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
